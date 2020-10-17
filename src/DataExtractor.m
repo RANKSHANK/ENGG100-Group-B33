@@ -35,8 +35,7 @@
                 case 'Altitude'
                     altitude = [altitude, str2double(data{2})];
                 otherwise
-                    frewind(file);
-                    disp('ERROR READING LINE' + fgets(file));
+                    disp('ERROR PARSING LINE DATA TYPE: ' + data{1});
             end
         end
         % ALWAYS close the stream
