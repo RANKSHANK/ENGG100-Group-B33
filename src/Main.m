@@ -8,6 +8,6 @@
     [northing, easting] = DataConverter(latitude, longitude);
     %   Calls the dynamics processor function that extracts the velocity,
     %   acceleration, and curvature of motion from the supplied data
-    [eastingVelocity, northingVelocity, altitudeVelocity, eastingAcceleration, northingAcceleration, altitudeAcceleration, eastingRho, northingRho, altitudeRho] = DynamicsProcessor(altitude, easting, northing);
+    [eastingVelocity, northingVelocity, altitudeVelocity, eastingAcceleration, northingAcceleration, altitudeAcceleration, eastingRho, northingRho, altitudeRho] = DynamicsProcessor(time, altitude, easting, northing);
     %  Instantiate the GUI with the relevant data
     GUICreator(time, easting, northing, altitude, eastingVelocity, northingVelocity, altitudeVelocity, eastingAcceleration, northingAcceleration, altitudeAcceleration, eastingRho, northingRho, altitudeRho);
