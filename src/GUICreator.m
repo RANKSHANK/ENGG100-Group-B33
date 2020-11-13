@@ -28,7 +28,7 @@ function changeGraph(button, eventData, time, easting, northing, altitude, easti
         case 5
             TangentialAccelerationVTime(time, eastingAcceleration, northingAcceleration, altitudeAcceleration);
         case 6
-            NormalAccelerationVTime(time, eastingAcceleration, northingAcceleration, altitudeAcceleration, eastingRho, northingRho, altitudeRho);
+            NormalAccelerationVTime(time, eastingVelocity, northingVelocity, altitudeVelocity, eastingRho, northingRho, altitudeRho);
     end
 end
 
