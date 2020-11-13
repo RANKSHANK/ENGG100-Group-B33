@@ -2,7 +2,7 @@
     cumulativeSum = 0;
     cumulativeDistance = zeros(length(time), 1);
     for(index = 2:length(time)) %2:719 is the size of each array where in selects a subset. (excel table)
-        cumulativeSum = cumulativeSum + abs(easting(index) - easting(index - 1)) + abs(northing(index) - northing(index - 1)) + abs(altitude(index) - altitude(index - 1));
+        cumulativeSum = cumulativeSum + sqrt((easting(index) - easting(index - 1))^2 + (northing(index) - northing(index - 1))^2 + (altitude(index) - altitude(index - 1))^2);
         cumulativeDistance(index) = cumulativeSum;
     end
         
