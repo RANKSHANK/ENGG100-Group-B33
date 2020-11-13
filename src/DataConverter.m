@@ -36,6 +36,7 @@
             % grab the longitude at the given index
             long = longitude(index);
             % Calculations transcribed from the supplied spreadsheet.
+            % There are *magic* values everywhere.
             % Here be dragons. 
             longZone = 31 + floor(long / 6);
             longZoneCM = 6 * longZone - 183;
