@@ -1,4 +1,4 @@
-%% Converts latitude and longitude to easting and northing respectively
+%% Converts latitude and longitude to northing and easting respectively
 %   Params
 %       latitude : latitude coordinate array
 %       longitude: longitude coordinate array
